@@ -8,6 +8,7 @@ public class Cloj {
     animals.add(new Dog());
     animals.add(new Cat());
     animals.add(new Fish());
+    animals.add(new Snake());
 
     List<Runnable> speaks = new ArrayList<Runnable>();
 
@@ -31,20 +32,26 @@ abstract class Animal {
   abstract public void speak();
 }
 
+class Snake extends Animals{
+  public void speak(){
+    System.out.println("hisssssssssss!");
+  }
+}
+
 class Dog extends Animal {
   public void speak() {
-    System.out.println("bark");
+    System.out.println("bark!");
   }
 }
 
 class Cat extends Animal {
   public void speak() {
-    System.out.println("meow");
+    System.out.println("meow!");
   }
 }
 
 class Fish extends Animal {
   public void speak() {
-    System.out.println("bubble");
+    System.out.println("bubble!");
   }
 }
