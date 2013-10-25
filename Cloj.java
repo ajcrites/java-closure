@@ -33,18 +33,18 @@ abstract class Animal {
 
 class Dog extends Animal {
   public void speak() {
-    System.out.println("bark");
+    System.out.println("bark!");
   }
 }
 
 class Cat extends Animal {
   public void speak() {
-    System.out.println("meow");
+    System.out.println("meow!");
   }
 }
 
 class Fish extends Animal {
   public void speak() {
-    System.out.println("bubble");
+    System.out.println("bubble!");
   }
 }
